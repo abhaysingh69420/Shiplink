@@ -1,15 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShipLink | Deliver with Trust</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaryTeal: '#008080',
+                        beRealOrange: '#FF4F00',
+                        slateGrey: '#F8FAFB',
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); }
+        .hero-gradient { background: radial-gradient(circle at top right, rgba(0,128,128,0.1), transparent); }
+        .floating { animation: floating 3s ease-in-out infinite; }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-slateGrey text-slate-900 overflow-x-hidden">
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>High Fid</title>
-    </head>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass border-b border-gray-200 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-primaryTeal rounded-xl flex items-center justify-center text-white shadow-lg">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+                <span class="text-2xl font-bold tracking-tight text-primaryTeal">ShipLink</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#features" class="hover:text-primaryTeal transition">Features</a>
+                <a href="#how-it-works" class="hover:text-primaryTeal transition">How it Works</a>
+                <a href="#team" class="hover:text-primaryTeal transition">Our Team</a>
+            </div>
+            <a href="https://hot-trust-16570993.figma.site" target="_blank" class="bg-beRealOrange text-white px-6 py-2 rounded-full font-bold shadow-lg hover:scale-105 transition-transform">
+                Live Demo
+            </a>
+        </div>
+    </nav>
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 hero-gradient">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <span class="bg-teal-100 text-primaryTeal px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest">HSRW Research Project</span>
+                <h1 class="text-6xl font-bold leading-tight mt-6">Deliver with <span class="text-primaryTeal">Trust</span>,<br>Travel with Purpose.</h1>
+                <p class="text-xl text-gray-600 mt-6 leading-relaxed">
+                    The peer-to-peer logistics ecosystem built for international students. Turn extra luggage space into a bridge between home and campus.
+                </p>
+                <div class="flex gap-4 mt-10">
+                    <a href="https://hot-trust-16570993.figma.site" target="_blank" class="bg-primaryTeal text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl hover:bg-opacity-90 transition flex items-center gap-3">
+                        Launch Prototype <i class="fa-solid fa-rocket"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="relative flex justify-center" data-aos="zoom-in">
+                <div class="floating w-72 h-[500px] bg-white rounded-[3rem] border-[8px] border-gray-900 shadow-2xl overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&q=80&w=1000" alt="App Preview" class="h-full object-cover">
+                    <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+                        <i class="fa-solid fa-circle-play text-white text-6xl opacity-80"></i>
+                    </div>
+                </div>
+                <!-- Floating Badges -->
+                <div class="absolute -top-4 -right-4 bg-white p-4 rounded-2xl shadow-xl border border-gray-100" data-aos="fade-left" data-aos-delay="400">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                            <i class="fa-solid fa-shield-check"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-gray-400">ESCROW STATUS</p>
+                            <p class="text-sm font-bold">Funds Secured 🔒</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By -->
+    <div class="py-10 border-y border-gray-100 bg-white">
+        <div class="container mx-auto px-6">
+            <p class="text-center text-gray-400 font-bold text-sm tracking-widest mb-8">DESIGNED BY INTERNATIONAL STUDENTS AT</p>
+            <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition">
+                <span class="text-2xl font-bold">HSRW</span>
+                <span class="text-2xl font-bold">TU MUNICH</span>
+                <span class="text-2xl font-bold">HEIDELBERG</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <section id="features" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold">Built for Real Life Problems</h2>
+                <div class="w-20 h-1.5 bg-beRealOrange mx-auto mt-4 rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition group border border-transparent hover:border-teal-100" data-aos="fade-up">
+                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center text-primaryTeal text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-fingerprint"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Story-Style ID Verification</h3>
+                    <p class="text-gray-500 leading-relaxed">We solved signup friction with a 4-step progressive disclosure flow. Identity is verified via Student ID and AI Liveness checks.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition group border border-transparent hover:border-orange-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center text-beRealOrange text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-vault"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Zero-Anxiety Payments</h3>
+                    <p class="text-gray-500 leading-relaxed">Our Escrow system holds funds until the final scan. Senders pay with peace of mind, and travelers are guaranteed their reward.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition group border border-transparent hover:border-teal-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center text-primaryTeal text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-qrcode"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">QR Physical Handover</h3>
+                    <p class="text-gray-500 leading-relaxed">The bridge between digital and reality. A simple QR scan confirms the physical exchange and triggers tracking updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-primaryTeal text-white relative overflow-hidden">
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h2 class="text-5xl font-bold mb-8" data-aos="fade-up">Ready to experience the prototype?</h2>
+            <p class="text-xl opacity-80 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Join Nina, Abhay, and Sheidaneh in redefining how international students ship gifts, documents, and culture.
+            </p>
+            <a href="https://hot-trust-16570993.figma.site" target="_blank" class="bg-beRealOrange text-white px-12 py-5 rounded-full font-bold text-xl shadow-2xl hover:scale-110 transition-transform inline-block">
+                View Live Demo <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+        <!-- Decorative Circle -->
+        <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+        <div class="absolute -top-20 -right-20 w-96 h-96 bg-orange-500/20 rounded-full blur-3xl"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center items-center gap-2 mb-6">
+                <div class="w-8 h-8 bg-primaryTeal rounded-lg flex items-center justify-center text-white">
+                    <i class="fa-solid fa-link text-xs"></i>
+                </div>
+                <span class="text-xl font-bold text-primaryTeal">ShipLink</span>
+            </div>
+            <p class="text-gray-400">© 2026 Applied Research Project A | HSRW</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html>
