@@ -38,11 +38,9 @@
             50% { transform: translateY(-20px); }
             100% { transform: translateY(0px); }
         }
-        html { scroll-behavior: smooth; }
     </style>
 </head>
 <body class="bg-slateGrey text-slate-900 overflow-x-hidden">
-
     <!-- Navigation -->
     <nav class="fixed w-full z-50 glass border-b border-gray-200 py-4">
         <div class="container mx-auto px-6 flex justify-between items-center">
@@ -53,183 +51,165 @@
                 <span class="text-2xl font-bold tracking-tight text-primaryTeal">ShipLink</span>
             </div>
             <div class="hidden md:flex space-x-8 font-medium">
-                <a href="#how-it-works" class="hover:text-primaryTeal transition text-sm font-bold uppercase tracking-widest">Process</a>
-                <a href="#features" class="hover:text-primaryTeal transition text-sm font-bold uppercase tracking-widest">Trust</a>
-                <a href="#team" class="hover:text-primaryTeal transition text-sm font-bold uppercase tracking-widest">Team</a>
+                <a href="#features" class="hover:text-primaryTeal transition">Features</a>
+                <a href="#how-it-works" class="hover:text-primaryTeal transition">How it Works</a>
+                <a href="#team" class="hover:text-primaryTeal transition">Our Team</a>
             </div>
             <a href="https://hot-trust-16570993.figma.site" target="_blank" class="bg-beRealOrange text-white px-6 py-2 rounded-full font-bold shadow-lg hover:scale-105 transition-transform">
                 Live Demo
             </a>
         </div>
     </nav>
-
     <!-- Hero Section -->
-    <section class="relative pt-40 pb-20 hero-gradient">
+    <section class="relative pt-32 pb-20 hero-gradient">
         <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
-                <span class="bg-teal-100 text-primaryTeal px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest italic">HSRW Winter 2025</span>
+                <span class="bg-teal-100 text-primaryTeal px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest">HSRW Research Project</span>
                 <h1 class="text-6xl font-bold leading-tight mt-6">Deliver with <span class="text-primaryTeal">Trust</span>,<br>Travel with Purpose.</h1>
                 <p class="text-xl text-gray-600 mt-6 leading-relaxed">
                     The peer-to-peer logistics ecosystem built for international students. Turn extra luggage space into a bridge between home and campus.
                 </p>
                 <div class="flex gap-4 mt-10">
-                    <a href="https://hot-trust-16570993.figma.site" target="_blank" class="bg-primaryTeal text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl hover:scale-105 transition flex items-center gap-3">
+                    <a href="https://hot-trust-16570993.figma.site" target="_blank" class="bg-primaryTeal text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl hover:bg-opacity-90 transition flex items-center gap-3">
                         Launch Prototype <i class="fa-solid fa-rocket"></i>
                     </a>
                 </div>
             </div>
             <div class="relative flex justify-center" data-aos="zoom-in">
                 <div class="floating w-72 h-[500px] bg-white rounded-[3rem] border-[8px] border-gray-900 shadow-2xl overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&q=80&w=1000" alt="App Preview" class="h-full object-cover brightness-75">
-                    <div class="absolute inset-0 bg-black/10 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&q=80&w=1000" alt="App Preview" class="h-full object-cover">
+                    <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
                         <i class="fa-solid fa-circle-play text-white text-6xl opacity-80"></i>
                     </div>
                 </div>
+                <!-- Floating Badges -->
                 <div class="absolute -top-4 -right-4 bg-white p-4 rounded-2xl shadow-xl border border-gray-100" data-aos="fade-left" data-aos-delay="400">
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">
                             <i class="fa-solid fa-shield-check"></i>
                         </div>
                         <div>
-                            <p class="text-xs font-bold text-gray-400 uppercase tracking-tighter">Verified User</p>
-                            <p class="text-sm font-bold text-primaryTeal">Student Vouched ✅</p>
+                            <p class="text-xs font-bold text-gray-400">ESCROW STATUS</p>
+                            <p class="text-sm font-bold">Funds Secured 🔒</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- How it Works Section -->
-    <section id="how-it-works" class="py-20 bg-white">
+    <!-- Trusted By -->
+    <div class="py-10 border-y border-gray-100 bg-white">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-4xl font-bold italic tracking-tight">How ShipLink Works</h2>
-                <div class="w-12 h-1 bg-beRealOrange mx-auto mt-4 rounded-full"></div>
+            <p class="text-center text-gray-400 font-bold text-sm tracking-widest mb-8">DESIGNED BY INTERNATIONAL STUDENTS AT</p>
+            <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition">
+                <span class="text-2xl font-bold">HSRW</span>
+                <span class="text-2xl font-bold">TU MUNICH</span>
+                <span class="text-2xl font-bold">HEIDELBERG</span>
             </div>
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="text-center p-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center text-primaryTeal text-2xl mx-auto mb-6">
-                        <i class="fa-solid fa-search"></i>
-                    </div>
-                    <h4 class="font-bold text-xl mb-2">1. Find a Peer</h4>
-                    <p class="text-gray-500 text-sm">Browse travelers heading to your destination.</p>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <!-- Personas Section -->
+<section id="personas" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold">Who we build for</h2>
+            <p class="text-gray-500 mt-4 text-lg">Real students, real international logistics struggles.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            <!-- Sara -->
+            <div class="flex items-center gap-6 p-6 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition" data-aos="fade-right">
+                <div class="w-24 h-24 bg-teal-100 rounded-full flex-shrink-0 overflow-hidden">
+                    <img src="https://i.pravatar.cc/150?u=sara" alt="Sara">
                 </div>
-                <div class="text-center p-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center text-primaryTeal text-2xl mx-auto mb-6">
-                        <i class="fa-solid fa-id-card-clip"></i>
-                    </div>
-                    <h4 class="font-bold text-xl mb-2">2. Verify & Chat</h4>
-                    <p class="text-gray-500 text-sm">Check mutual student status and coordinate.</p>
+                <div>
+                    <h4 class="text-xl font-bold italic">"I want to send gifts to my family in Iran without paying 90€."</h4>
+                    <p class="text-primaryTeal font-bold mt-2">Sara, 26 — Master's Student</p>
                 </div>
-                <div class="text-center p-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center text-primaryTeal text-2xl mx-auto mb-6">
-                        <i class="fa-solid fa-lock"></i>
-                    </div>
-                    <h4 class="font-bold text-xl mb-2">3. Escrow Pay</h4>
-                    <p class="text-gray-500 text-sm">Funds are held securely by ShipLink until delivery.</p>
+            </div>
+            <!-- Rohan -->
+            <div class="flex items-center gap-6 p-6 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition" data-aos="fade-left">
+                <div class="w-24 h-24 bg-orange-100 rounded-full flex-shrink-0 overflow-hidden">
+                    <img src="https://i.pravatar.cc/150?u=rohan" alt="Rohan">
                 </div>
-                <div class="text-center p-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center text-beRealOrange text-2xl mx-auto mb-6">
-                        <i class="fa-solid fa-qrcode"></i>
-                    </div>
-                    <h4 class="font-bold text-xl mb-2">4. Scan Handover</h4>
-                    <p class="text-gray-500 text-sm">Scan QR at the airport to release payment instantly.</p>
+                <div>
+                    <h4 class="text-xl font-bold italic">"I travel to India often and want to help peers by using my extra space."</h4>
+                    <p class="text-beRealOrange font-bold mt-2">Rohan, 24 — Engineering Student</p>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="py-20 bg-slateGrey">
+    </div>
+</section>
+    <section id="features" class="py-20">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold italic tracking-tight">Trust Architecture</h2>
-                <div class="w-12 h-1 bg-primaryTeal mx-auto mt-4 rounded-full"></div>
+                <h2 class="text-4xl font-bold">Built for Real Life Problems</h2>
+                <div class="w-20 h-1.5 bg-beRealOrange mx-auto mt-4 rounded-full"></div>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-10 rounded-[2rem] shadow-sm border border-gray-50 group hover:scale-[1.02] transition-all" data-aos="fade-up">
-                    <div class="w-12 h-12 text-primaryTeal text-3xl mb-6">
-                        <i class="fa-solid fa-user-shield"></i>
+                <!-- Feature 1 -->
+                <div class="bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition group border border-transparent hover:border-teal-100" data-aos="fade-up">
+                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center text-primaryTeal text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-fingerprint"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Story-Style ID</h3>
-                    <p class="text-gray-500 leading-relaxed">Identity verification redesigned as a fast social flow to reduce friction while keeping the community safe.</p>
+                    <h3 class="text-2xl font-bold mb-4">Story-Style ID Verification</h3>
+                    <p class="text-gray-500 leading-relaxed">We solved signup friction with a 4-step progressive disclosure flow. Identity is verified via Student ID and AI Liveness checks.</p>
                 </div>
-                <div class="bg-white p-10 rounded-[2rem] shadow-sm border border-gray-50 group hover:scale-[1.02] transition-all" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-12 h-12 text-beRealOrange text-3xl mb-6">
+                <!-- Feature 2 -->
+                <div class="bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition group border border-transparent hover:border-orange-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center text-beRealOrange text-3xl mb-6 group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-vault"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Escrow Guard</h3>
-                    <p class="text-gray-500 leading-relaxed">No more payment anxiety. We hold the funds securely, only releasing them once the digital-to-physical handover is verified.</p>
+                    <h3 class="text-2xl font-bold mb-4">Zero-Anxiety Payments</h3>
+                    <p class="text-gray-500 leading-relaxed">Our Escrow system holds funds until the final scan. Senders pay with peace of mind, and travelers are guaranteed their reward.</p>
                 </div>
-                <div class="bg-white p-10 rounded-[2rem] shadow-sm border border-gray-50 group hover:scale-[1.02] transition-all" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-12 h-12 text-primaryTeal text-3xl mb-6">
-                        <i class="fa-solid fa-users-viewfinder"></i>
+                <!-- Feature 3 -->
+                <div class="bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition group border border-transparent hover:border-teal-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center text-primaryTeal text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-qrcode"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Mutual Vouching</h3>
-                    <p class="text-gray-500 leading-relaxed">See who else at your university knows your traveler. We build trust on existing real-world student connections.</p>
+                    <h3 class="text-2xl font-bold mb-4">QR Physical Handover</h3>
+                    <p class="text-gray-500 leading-relaxed">The bridge between digital and reality. A simple QR scan confirms the physical exchange and triggers tracking updates.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Team Section -->
-    <section id="team" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-4xl font-bold italic tracking-tight">The Visionary Team</h2>
-                <div class="w-12 h-1 bg-beRealOrange mx-auto mt-4 rounded-full"></div>
-            </div>
-            <div class="grid md:grid-cols-3 gap-12">
-                <!-- Nina -->
-                <div class="text-center" data-aos="fade-up">
-                    <div class="w-32 h-32 bg-slateGrey rounded-[2rem] flex items-center justify-center mx-auto mb-6 shadow-lg text-primaryTeal text-4xl">
-                        <i class="fa-solid fa-user-tie"></i>
-                    </div>
-                    <h5 class="text-xl font-bold">Nina Naeemi</h5>
-                    <p class="text-primaryTeal font-medium">Product Lead & Strategy</p>
-                </div>
-                <!-- Abhay -->
-                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-32 h-32 bg-slateGrey rounded-[2rem] flex items-center justify-center mx-auto mb-6 shadow-lg text-primaryTeal text-4xl border-2 border-beRealOrange">
-                        <i class="fa-solid fa-palette"></i>
-                    </div>
-                    <h5 class="text-xl font-bold">Abhay Pratap Singh</h5>
-                    <p class="text-primaryTeal font-medium">Visual & Interaction Design</p>
-                </div>
-                <!-- Sheidaneh -->
-                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-32 h-32 bg-slateGrey rounded-[2rem] flex items-center justify-center mx-auto mb-6 shadow-lg text-primaryTeal text-4xl">
-                        <i class="fa-solid fa-microscope"></i>
-                    </div>
-                    <h5 class="text-xl font-bold">Sheidaneh Baghdar Omidy</h5>
-                    <p class="text-primaryTeal font-medium">Research & UX Testing</p>
-                </div>
-            </div>
+    <!-- Call to Action -->
+    <section class="py-20 bg-primaryTeal text-white relative overflow-hidden">
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h2 class="text-5xl font-bold mb-8" data-aos="fade-up">Ready to experience the prototype?</h2>
+            <p class="text-xl opacity-80 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Join Nina, Abhay, and Sheidaneh in redefining how international students ship gifts, documents, and culture.
+            </p>
+            <a href="https://hot-trust-16570993.figma.site" target="_blank" class="bg-beRealOrange text-white px-12 py-5 rounded-full font-bold text-xl shadow-2xl hover:scale-110 transition-transform inline-block">
+                View Live Demo <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
         </div>
+        <!-- Decorative Circle -->
+        <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+        <div class="absolute -top-20 -right-20 w-96 h-96 bg-orange-500/20 rounded-full blur-3xl"></div>
     </section>
-
     <!-- Footer -->
-    <footer class="py-12 bg-slateGrey border-t border-gray-100">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-            <div class="flex items-center gap-2 mb-4 md:mb-0">
+    <footer class="py-12 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center items-center gap-2 mb-6">
                 <div class="w-8 h-8 bg-primaryTeal rounded-lg flex items-center justify-center text-white">
                     <i class="fa-solid fa-link text-xs"></i>
                 </div>
                 <span class="text-xl font-bold text-primaryTeal">ShipLink</span>
             </div>
-            <p class="text-gray-400 text-sm font-bold uppercase tracking-widest">© 2026 Applied Research Project A | HSRW</p>
-            <div class="flex gap-6 mt-4 md:mt-0 text-gray-400">
-                <a href="#"><i class="fa-brands fa-figma hover:text-primaryTeal transition text-xl"></i></a>
-                <a href="#"><i class="fa-brands fa-github hover:text-primaryTeal transition text-xl"></i></a>
-            </div>
+            <p class="text-gray-400">© 2026 Applied Research Project A | HSRW</p>
         </div>
     </footer>
-
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({ duration: 1000, once: true });
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
     </script>
 </body>
 </html>
+Footer
